@@ -1,28 +1,43 @@
 import { services } from '@/data'
-
-const delays = ['reveal-delay-1','reveal-delay-2','reveal-delay-3','reveal-delay-1','reveal-delay-2','reveal-delay-3']
+import { ServiceIcon } from '@/components/Icons'
 
 export function Services() {
   return (
-    <section className="section section--alt" id="services">
-      <div className="pp-container">
-        <div className="text-center" style={{ marginBottom:60 }}>
-          <div className="section-label">What I Do</div>
-          <h2 className="section-title">
-            End-to-End <span className="hero__title-gradient">WordPress</span><br />Development
+    <section id="services" className="block light">
+      <div className="container">
+        <div className="section-head center reveal">
+          <div className="eyebrow">What I Do</div>
+          <h2>
+            End-to-End <span className="gold">WordPress</span> Development
           </h2>
-          <p className="section-subtitle" style={{ margin:'0 auto' }}>
+          <p>
             From pixel-perfect Figma builds to complex custom plugins and WooCommerce stores.
           </p>
         </div>
-        <div className="grid-3">
-          {services.map((s, i) => (
-            <div className={`service-card reveal ${delays[i]}`} key={s.title}>
-              <span className="service-card__icon">{s.icon}</span>
-              <h3 className="service-card__title">{s.title}</h3>
-              <p className="service-card__desc">{s.desc}</p>
-            </div>
-          ))}
+
+        <div className="feature-grid">
+          {services.map((item, index) => {
+            const num = String(index + 1).padStart(2, '0')
+            const delayClass = `reveal-delay-${(index % 3) + 1}`
+
+            return (
+              <div
+                key={item.title}
+                className={`feature-card reveal ${delayClass}`}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.4rem' }}>
+                  <div className="feature-num" style={{ marginBottom: 0 }}>{num}</div>
+                  <div style={{ color: 'var(--cosmic-gold-deep)', opacity: 0.85, display: 'flex', alignItems: 'center' }} aria-hidden="true">
+                    <ServiceIcon index={index} size={24} />
+                  </div>
+                </div>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

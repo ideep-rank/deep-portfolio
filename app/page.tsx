@@ -1,40 +1,36 @@
 import { Header }       from '@/components/Header'
 import { Hero }         from '@/components/Hero'
-import { Services }     from '@/components/Services'
+import { Marquee }      from '@/components/Marquee'
+import { Journey }      from '@/components/Journey'
 import { Work }         from '@/components/Work'
-import { About }        from '@/components/About'
-import { Skills }       from '@/components/Skills'
-import { Experience }   from '@/components/Experience'
+import { Services }     from '@/components/Services'
+import { TechStack }    from '@/components/TechStack'
 import { Process }      from '@/components/Process'
+import { Philosophy }   from '@/components/Philosophy'
+import { Experience }   from '@/components/Experience'
 import { Contact }      from '@/components/Contact'
 import { Footer }       from '@/components/Footer'
-import { BgCanvas }     from '@/components/BgCanvas'
 import { CursorGlow }   from '@/components/CursorGlow'
-import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 import { ScrollReveal } from '@/components/ScrollReveal'
 
 export default function Home() {
   return (
     <>
       <CursorGlow />
-      <BgCanvas />
-      <div className="grid3d">
-        <div className="grid3d__floor" />
-        <div className="grid3d__vignette" />
-      </div>
       <Header />
       <main>
         <Hero />
-        <Services />
+        <Marquee />
+        <Journey />
         <Work />
-        <About />
-        <Skills />
-        <Experience />
+        <Services />
+        <TechStack />
         <Process />
+        <Philosophy />
+        <Experience />
         <Contact />
       </main>
       <Footer />
-      <ThemeSwitcher />
       <ScrollReveal />
     </>
   )

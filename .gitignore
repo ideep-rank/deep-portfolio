@@ -9,5 +9,9 @@ out/
 .env*
 !.env.example
 
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts.bak
+
 # macOS metadata
 .DS_Store

@@ -1,0 +1,110 @@
+export function LogoD({ size = 38, className = '' }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`logo-d-svg ${className}`.trim()}
+      aria-label="Deep Rank Logo"
+    >
+      <defs>
+        <linearGradient id="logo-d-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#0f1c45" />
+          <stop offset="50%" stopColor="#070e24" />
+          <stop offset="100%" stopColor="#030712" />
+        </linearGradient>
+        <linearGradient id="logo-d-border" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#f5dc8e" stopOpacity="0.85" />
+          <stop offset="50%" stopColor="#c9963a" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#8a651f" stopOpacity="0.75" />
+        </linearGradient>
+        <linearGradient id="logo-d-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="25%" stopColor="#fce7a2" />
+          <stop offset="65%" stopColor="#c9963a" />
+          <stop offset="100%" stopColor="#e2ab4b" />
+        </linearGradient>
+        <filter id="logo-d-glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="1.2" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+
+      {/* Container Base with cosmic glow border */}
+      <rect
+        x="2"
+        y="2"
+        width="60"
+        height="60"
+        rx="14"
+        fill="url(#logo-d-bg)"
+        stroke="url(#logo-d-border)"
+        strokeWidth="1.2"
+      />
+
+      {/* Subtle Celestial Orbital Arc */}
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="24"
+        ry="11"
+        fill="none"
+        stroke="#f5dc8e"
+        strokeOpacity="0.18"
+        strokeWidth="1"
+        strokeDasharray="2 4"
+        transform="rotate(-24 32 32)"
+      />
+
+      {/* Dynamic Italic Dollar-Style D Symbol Group (Slanted -13.5°) */}
+      <g transform="matrix(1 0 -0.24 1 7.68 0)">
+        {/* Dollar-Style Central Vertical Strike Pillar */}
+        <rect
+          x="30"
+          y="6.5"
+          width="4"
+          height="51"
+          rx="0.8"
+          fill="url(#logo-d-gold)"
+        />
+
+        {/* Architectural Italic D Glyph */}
+        <path
+          d="M 17 15
+             L 32 15
+             C 42 15, 48 21.5, 48 32
+             C 48 42.5, 42 49, 32 49
+             L 17 49
+             C 15.5 49, 14.5 48, 14.5 46.5
+             L 14.5 17.5
+             C 14.5 16, 15.5 15, 17 15
+             Z
+             M 23.5 22.5
+             L 30.5 22.5
+             C 36.5 22.5, 40.5 26.5, 40.5 32
+             C 40.5 37.5, 36.5 41.5, 30.5 41.5
+             L 23.5 41.5
+             Z"
+          fill="url(#logo-d-gold)"
+          fillRule="evenodd"
+          filter="url(#logo-d-glow)"
+        />
+
+        {/* Celestial Star Glint (✦) at Top Right Vertex */}
+        <path
+          d="M 48 8
+             Q 48 13 53 13
+             Q 48 13 48 18
+             Q 48 13 43 13
+             Q 48 13 48 8
+             Z"
+          fill="#ffffff"
+          opacity="0.95"
+        />
+        <circle cx="48" cy="13" r="1.2" fill="#f5dc8e" />
+      </g>
+    </svg>
+  )
+}
