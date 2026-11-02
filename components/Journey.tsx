@@ -55,7 +55,7 @@ export function Journey() {
           <div className="reveal reveal-delay-1">
             <div className="journey-frame">
               <Image
-                src="/deep-main.jpg"
+                src="/deep-main.webp"
                 alt="Deep Rank — Software Engineer working at desk"
                 width={600}
                 height={600}
