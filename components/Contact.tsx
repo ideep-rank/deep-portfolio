@@ -33,12 +33,12 @@ export function Contact() {
 
             <h3>LinkedIn</h3>
             <a
-              href="https://linkedin.com/in/rankdeep18"
+              href="https://linkedin.com/in/ideep-rank"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-card-val"
             >
-              linkedin.com/in/rankdeep18
+              linkedin.com/in/ideep-rank
             </a>
 
             <p>
@@ -51,7 +51,7 @@ export function Contact() {
 
             <div className="contact-card-actions">
               <a
-                href="https://linkedin.com/in/rankdeep18"
+                href="https://linkedin.com/in/ideep-rank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -131,7 +131,7 @@ export function Contact() {
 
             <div className="contact-card-actions">
               <a
-                href="https://linkedin.com/in/rankdeep18"
+                href="https://linkedin.com/in/ideep-rank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

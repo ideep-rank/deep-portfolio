@@ -28,7 +28,7 @@ export function Footer() {
 
             <div className="footer-contact-block">
               <div className="footer-email">
-                <a href="https://linkedin.com/in/rankdeep18" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/ideep-rank" target="_blank" rel="noopener noreferrer">
                   Connect on LinkedIn →
                 </a>
               </div>
@@ -38,7 +38,7 @@ export function Footer() {
               </div>
               <div className="footer-social-links">
                 <a
-                  href="https://linkedin.com/in/rankdeep18"
+                  href="https://linkedin.com/in/ideep-rank"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: 'var(--cosmic-gold-light)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '6px' }}
@@ -76,7 +76,7 @@ export function Footer() {
       {/* LinkedIn Floating Action Button */}
       <a
         className="linkedin-fab"
-        href="https://linkedin.com/in/rankdeep18"
+        href="https://linkedin.com/in/ideep-rank"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Connect with Deep Rank on LinkedIn"
