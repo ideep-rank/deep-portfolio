@@ -134,7 +134,7 @@ export function Contact() {
                 href="https://linkedin.com/in/rankdeep18"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline"
+                className="btn btn-primary"
                 style={{ padding: '0.65rem 1.2rem', fontSize: '0.82rem', width: '100%', justifyContent: 'center' }}
               >
                 <span>Message on LinkedIn</span>
