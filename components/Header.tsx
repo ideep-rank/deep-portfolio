@@ -112,7 +112,7 @@ export function Header() {
           style={{ marginTop: '1rem', width: '220px' }}
           onClick={() => setMobileOpen(false)}
         >
-          <span>Start a Project</span>
+          <span>Let&apos;s Connect</span>
           <IconArrowRight size={14} strokeWidth={2.2} />
         </a>
       </div>

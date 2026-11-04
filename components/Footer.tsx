@@ -28,11 +28,11 @@ export function Footer() {
 
             <div className="footer-contact-block">
               <div className="footer-email">
-                <a href="mailto:rankdeep@gmail.com">rankdeep@gmail.com</a>
+                <a href="#contact">Get in Touch →</a>
               </div>
               <div className="footer-location">
                 <IconLocation size={14} style={{ display: 'inline-block', verticalAlign: '-2px', marginRight: '6px', color: 'var(--cosmic-gold-light)' }} />
-                Ahmedabad, Gujarat, India · Available Globally for Remote Projects
+                Ahmedabad, Gujarat, India · Open to Remote Opportunities
               </div>
               <div className="footer-social-links">
                 <a
@@ -45,10 +45,12 @@ export function Footer() {
                   <IconArrowRight size={13} strokeWidth={2.2} />
                 </a>
                 <a
-                  href="mailto:rankdeep@gmail.com"
+                  href="https://github.com/rankdeep"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{ color: 'var(--cosmic-gold-light)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 >
-                  <span>Email</span>
+                  <span>GitHub</span>
                   <IconArrowRight size={13} strokeWidth={2.2} />
                 </a>
               </div>
