@@ -74,12 +74,12 @@ export function Contact() {
 
             <h3>GitHub</h3>
             <a
-              href="https://github.com/rankdeep"
+              href="https://github.com/ideep-rank"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-card-val"
             >
-              github.com/rankdeep
+              github.com/ideep-rank
             </a>
 
             <p>
@@ -92,7 +92,7 @@ export function Contact() {
 
             <div className="contact-card-actions">
               <a
-                href="https://github.com/rankdeep"
+                href="https://github.com/ideep-rank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"

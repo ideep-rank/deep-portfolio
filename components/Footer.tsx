@@ -47,7 +47,7 @@ export function Footer() {
                   <IconArrowRight size={13} strokeWidth={2.2} />
                 </a>
                 <a
-                  href="https://github.com/rankdeep"
+                  href="https://github.com/ideep-rank"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: 'var(--cosmic-gold-light)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '6px' }}
