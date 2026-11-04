@@ -28,7 +28,9 @@ export function Footer() {
 
             <div className="footer-contact-block">
               <div className="footer-email">
-                <a href="#contact">Get in Touch →</a>
+                <a href="https://linkedin.com/in/rankdeep18" target="_blank" rel="noopener noreferrer">
+                  Connect on LinkedIn →
+                </a>
               </div>
               <div className="footer-location">
                 <IconLocation size={14} style={{ display: 'inline-block', verticalAlign: '-2px', marginRight: '6px', color: 'var(--cosmic-gold-light)' }} />

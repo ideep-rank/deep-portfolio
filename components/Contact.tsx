@@ -1,36 +1,11 @@
-'use client'
-
-import { useState } from 'react'
 import {
-  IconMail,
   IconBriefcase,
   IconGitHub,
+  IconLocation,
   IconArrowRight,
-  IconCopy,
-  IconCheck,
 } from '@/components/Icons'
 
 export function Contact() {
-  const [copied, setCopied] = useState(false)
-
-  // Assembled at runtime to prevent automated crawlers from parsing raw mailto links in static HTML
-  const emailUser = 'rankdeep'
-  const emailDomain = 'gmail.com'
-  const fullEmail = `${emailUser}@${emailDomain}`
-
-  const handleCopyEmail = () => {
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(fullEmail).then(() => {
-        setCopied(true)
-        setTimeout(() => setCopied(false), 2500)
-      })
-    }
-  }
-
-  const handleOpenMail = () => {
-    window.location.href = `mailto:${fullEmail}?subject=Hello%20Deep%20-%20Engineering%20Inquiry`
-  }
-
   return (
     <section id="contact" className="block dark contact-section">
       <div className="container">
@@ -129,72 +104,42 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Card 3: Direct Email (Protected against scrapers) */}
+          {/* Card 3: Location & Remote Collaboration */}
           <div className="contact-card reveal reveal-delay-2">
             <div className="contact-card-top">
-              <span className="contact-card-chip">Direct Inquiries</span>
+              <span className="contact-card-chip">Timezone &amp; Reach</span>
               <div className="contact-card-icon" aria-hidden="true">
-                <IconMail size={22} />
+                <IconLocation size={22} />
               </div>
             </div>
 
-            <h3>Email</h3>
-            <button
-              type="button"
-              onClick={handleCopyEmail}
-              className="contact-card-val"
-              title="Click to copy email"
-              style={{
-                background: 'none',
-                border: 'none',
-                padding: 0,
-                textAlign: 'left',
-                cursor: 'pointer',
-                fontFamily: 'inherit',
-                fontSize: 'inherit',
-              }}
-            >
-              {copied ? 'rankdeep@gmail.com (Copied! ✓)' : 'rankdeep [at] gmail [dot] com'}
-            </button>
+            <h3>Location &amp; Remote</h3>
+            <span className="contact-card-val">
+              Ahmedabad, India · IST (UTC+5:30)
+            </span>
 
             <p>
-              Preferred for formal correspondence, tech inquiries, or reaching out directly without social media platforms.
+              Seamless asynchronous and real-time collaboration with engineering teams across US, European, UK, and APAC timezones.
             </p>
 
             <div className="contact-card-meta">
-              <span>{copied ? '✓ Copied to clipboard' : 'Spam-protected · Typically responds in 24h'}</span>
+              <div className="contact-live-beacon">
+                <span className="contact-live-dot" />
+                <span>Open to Global Remote Roles</span>
+              </div>
             </div>
 
-            <div className="contact-card-actions" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-              <button
-                type="button"
-                onClick={handleCopyEmail}
-                className="btn btn-primary"
-                style={{
-                  padding: '0.65rem 1rem',
-                  fontSize: '0.82rem',
-                  flex: '1 1 140px',
-                  justifyContent: 'center',
-                }}
-              >
-                {copied ? <IconCheck size={15} strokeWidth={2.2} /> : <IconCopy size={15} strokeWidth={1.8} />}
-                <span>{copied ? 'Copied!' : 'Copy Email'}</span>
-              </button>
-              <button
-                type="button"
-                onClick={handleOpenMail}
+            <div className="contact-card-actions">
+              <a
+                href="https://linkedin.com/in/rankdeep18"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{
-                  padding: '0.65rem 0.9rem',
-                  fontSize: '0.82rem',
-                  flex: '1 1 110px',
-                  justifyContent: 'center',
-                }}
-                title="Launch default mail app"
+                style={{ padding: '0.65rem 1.2rem', fontSize: '0.82rem', width: '100%', justifyContent: 'center' }}
               >
-                <span>Open Mail</span>
-                <IconArrowRight size={14} strokeWidth={2.2} />
-              </button>
+                <span>Message on LinkedIn</span>
+                <IconArrowRight size={15} strokeWidth={2.2} />
+              </a>
             </div>
           </div>
         </div>
